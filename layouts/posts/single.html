@@ -49,6 +49,7 @@
         </div>
         {{ end }}
       </div>
+      <p>Reading time: {{ math.Round (div (countwords .Content) 150.0) }} minutes.</p>
     </header>
 
   {{ with .Resources.ByType "image" }}
